@@ -1,0 +1,36 @@
+{
+	"name": "nodejs-mongodb-docker",
+	"version": "1.0.0",
+	"description": "Simple API in NodeJS connecting with MongoDB running in Docker",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rhobernardi/nodejs-mongodb-docker.git"
+	},
+	"keywords": [
+		"mongdb",
+		"nodejs",
+		"node",
+		"docker",
+		"API"
+	],
+	"author": "Rodrigo Bernardi",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rhobernardi/nodejs-mongodb-docker/issues"
+	},
+	"homepage": "https://github.com/rhobernardi/nodejs-mongodb-docker#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"mongoose": "^5.9.4",
+		"morgan": "^1.9.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.2"
+	}
+}
