@@ -5,7 +5,9 @@
 	"main": "app.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "nodemon app.js"
+		"dev": "nodemon app.js",
+		"build": "cat ~/my_password_docker.txt | docker login --username rhobernardi --password-stdin && docker-compose build && docker-compose up",
+		"start": "node app.js"
 	},
 	"repository": {
 		"type": "git",
