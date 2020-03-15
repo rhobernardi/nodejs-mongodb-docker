@@ -1,19 +1,27 @@
 const express = require('express');
 const morgan = require('morgan');
-const mongoose = require('mongoose');
 const cors = require('cors');
 
-const app = express();
-const port = process.env.PORT || 8081;
-const router = require('./routes/router');
+const requireDir = require('require-dir');
+requireDir('./src/database/models');
 
-app.use(morgan('dev'));
-app.use(router);
+const app = express();
+const port = process.env.PORT || 8081; // Load environment PORT config or set default as 8081
+
+app.use(express.json()); // Accept JSON as req.body
+app.use(morgan('dev')); // Route access log
+app.use(cors()); // Access control to API from all hosts (in this case)
+
+const router = require('./src/router'); // Load routs from router
+
+app.use('/api', router);
 
 app.get('/', (req, res) => {
-	return res.status(200).json({ status: 'online' });
+	return res.status(200).send('<h1>Server is running</h1>');
 });
 
 app.listen(port, () => {
-	console.log('Running on port ' + port);
+	console.log(`[*] Running API on port ${port}.`);
 });
+
+//TODO tentar subir maquinas via docker-compose
