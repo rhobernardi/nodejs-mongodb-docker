@@ -1,19 +1,5 @@
-############################################################
-# Dockerfile to build MongoDB container images
-# Based on Ubuntu
-############################################################
-
-# # Set the base image to Ubuntu
-# FROM ubuntu
-
-# # Update the repository sources list
-# RUN apt-get update
-
-# ################## BEGIN INSTALLATION #####################
-# CMD docker pull mongo
-
 # Use the official image as a parent image
-FROM node:current-slim
+FROM node:13.7.0
 
 # Set the working directory
 WORKDIR /usr/src/app
@@ -29,7 +15,6 @@ EXPOSE 8085
 
 # Run the specified command within the container.
 CMD [ "npm", "start" ]
-
 
 # Copy the rest of your app's source code from your host to your image filesystem.
 COPY . .
