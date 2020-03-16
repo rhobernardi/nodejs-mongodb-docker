@@ -21,7 +21,7 @@ Now wait until those messages are printed in the screen (all models, API running
     [+] Product model loaded.
     [+] Running API on port 8081.
     [*] Connecting with database...
-    [+] Database connected on port 27017.
+    [+] MongoDB connected on port 27017.
 ```
 
 When ready, the API can be accessed following the attached documentation.
