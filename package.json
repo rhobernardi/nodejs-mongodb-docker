@@ -4,12 +4,10 @@
 	"description": "Simple API in NodeJS connecting with MongoDB running in Docker",
 	"main": "app.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"dev": "nodemon app.js",
-		"build-db": "docker pull mongo && docker container run --name mongodb --publish 27017:27017 --detach mongo",
-		"build-app": "docker image build -t node-mongo . && docker container run --name nodeapi --publish 8081:8085 node-mongo",
-		"build": "npm run build-db && npm run build-app",
-		"start": "npm run build-db && node app.js"
+		"build-db": "docker pull mongo && docker container run --name mongodb-node --publish 27017:27017 --detach mongo",
+		"build-app-docker": "docker image build -t node-mongo . && docker container run --name nodeapi --publish 8081:8085 node-mongo",
+		"start": "docker rm mongodb-node --force && npm run build-db && node app.js"
 	},
 	"repository": {
 		"type": "git",
