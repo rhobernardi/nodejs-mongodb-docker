@@ -2,11 +2,7 @@
 
 Simple API in NodeJS connecting with MongoDB running in Docker
 
-======
-
-## Note: requires docker installed and running properly.
-
-======
+-   Note: requires docker installed and running properly.
 
 ## Running the Backend
 
@@ -16,6 +12,4 @@ Simple API in NodeJS connecting with MongoDB running in Docker
 
 ## API documentation
 
-```
-    https://documenter.getpostman.com/view/7957247/SzS2y8gu
-```
+https://documenter.getpostman.com/view/7957247/SzS2y8gu
