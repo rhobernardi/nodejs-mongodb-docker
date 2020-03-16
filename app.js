@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 
 const requireDir = require('require-dir');
-requireDir('./src/database/models');
+requireDir('./src/database/models'); // Load all models from this directory
 
 const app = express();
 const port = process.env.PORT || 8081; // Load environment PORT config or set default as 8081
