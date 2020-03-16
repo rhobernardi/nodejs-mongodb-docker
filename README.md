@@ -10,12 +10,18 @@ _Simple microservice API in NodeJS connecting with MongoDB Docker container_
     $ npm start
 ```
 
-Now wait until those 3 messages are printed in the screen:
+Now wait until those messages are printed in the screen (all models, API running and database successfully connected):
 
 ```
-    [*] Product model loaded.
-    [*] Running API on port 8081.
-    [*] Database connected on port 27017.
+    .
+    .
+    .
+
+    [+] Animal model loaded.
+    [+] Product model loaded.
+    [+] Running API on port 8081.
+    [*] Connecting with database...
+    [+] Database connected on port 27017.
 ```
 
 When ready, the API can be accessed following the attached documentation.
