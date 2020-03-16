@@ -2,7 +2,7 @@
 
 Simple API in NodeJS connecting with MongoDB running in Docker
 
--   Note: requires Docker installed and running properly.
+-   **Note:** Requires **Docker** installed and running properly.
 
 ## Running the Backend
 
