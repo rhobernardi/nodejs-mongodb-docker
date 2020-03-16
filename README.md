@@ -10,7 +10,7 @@ Simple API in NodeJS connecting with MongoDB running in Docker
     $ npm start
 ```
 
-Now wait for these messages:
+Now wait until those 3 messages are printed in the screen:
 
 ```
     [*] Product model loaded.
@@ -18,7 +18,7 @@ Now wait for these messages:
     [*] Database connected on port 27017.
 ```
 
-When ready, the API can be accessed following the documentation attached.
+When ready, the API can be accessed following the attached documentation.
 
 ## API documentation
 
