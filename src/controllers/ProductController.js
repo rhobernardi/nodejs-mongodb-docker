@@ -28,6 +28,6 @@ module.exports = {
 	// delete a single product defined by id
 	destroy: async (req, res) => {
 		const product = await Product.findByIdAndRemove(req.params.id);
-		return res.status(200).send();
+		return res.status(204).send();
 	},
 };
