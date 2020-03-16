@@ -23,5 +23,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
 	console.log(`[*] Running API on port ${port}.`);
 });
-
-//TODO tentar subir maquinas via docker-compose
