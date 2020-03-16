@@ -21,5 +21,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log(`[*] Running API on port ${port}.`);
+	console.log(`[+] Running API on port ${port}.`);
+	console.log('[!] Connecting with database...');
 });

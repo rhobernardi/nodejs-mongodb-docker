@@ -4,10 +4,10 @@
 	"description": "Simple API in NodeJS connecting with MongoDB running in Docker",
 	"main": "app.js",
 	"scripts": {
-		"dev": "nodemon app.js",
+		"dev": "docker rm mongodb-node --force || true && npm run build-db && nodemon app.js",
 		"build-db": "docker pull mongo && docker container run --name mongodb-node --publish 27017:27017 --detach mongo",
 		"build-app-docker": "docker image build -t node-mongo . && docker container run --name nodeapi --publish 8081:8085 node-mongo",
-		"start": "docker rm mongodb-node --force && npm run build-db && node app.js"
+		"start": "docker rm mongodb-node --force || true && npm run build-db && node app.js"
 	},
 	"repository": {
 		"type": "git",

@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const ProductController = require('./controllers/ProductController');
+const ModelController = require('./controllers/ModelController');
 require('./database/config');
 
-router.get('/products', ProductController.index);
-router.get('/products/:id', ProductController.show);
-router.post('/products', ProductController.store);
-router.patch('/products/:id', ProductController.update);
-router.delete('/products/:id', ProductController.destroy);
+router.get('/:model', ModelController.index);
+router.get('/:model/:id', ModelController.show);
+router.post('/:model', ModelController.store);
+router.patch('/:model/:id', ModelController.update);
+router.delete('/:model/:id', ModelController.destroy);
 
 module.exports = router;
