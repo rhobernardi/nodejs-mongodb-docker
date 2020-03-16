@@ -1,6 +1,6 @@
 # Simple Backend
 
-Simple API in NodeJS connecting with MongoDB running in Docker
+_Simple microservice API in NodeJS connecting with MongoDB Docker container_
 
 -   **Note:** Requires **Docker** installed and running properly.
 
