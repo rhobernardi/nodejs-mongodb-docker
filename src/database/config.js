@@ -9,7 +9,7 @@ mongoose
 		useUnifiedTopology: true,
 	})
 	.then(() => {
-		console.log(`[*] Database connected on port ${db_port}.`);
+		console.log(`[+] MongoDB connected on port ${db_port}.`);
 	})
 	.catch(error => {
 		throw new Error(error);

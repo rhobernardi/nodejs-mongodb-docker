@@ -22,6 +22,6 @@ const ProductSchema = new mongoose.Schema({
 });
 
 ProductSchema.plugin(mongoosePaginate);
-mongoose.model('Product', ProductSchema);
+mongoose.model('product', ProductSchema);
 
-console.log('[*] Product model loaded.');
+console.log('[+] Product model loaded.');
