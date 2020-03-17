@@ -3,7 +3,7 @@ const mongoosePaginate = require('mongoose-paginate');
 
 // A schema for Product to create a model. A plugin for pagination was added.
 const ProductSchema = new mongoose.Schema({
-	tittle: {
+	title: {
 		type: String,
 		required: true,
 	},
