@@ -1,0 +1,888 @@
+{
+	"info": {
+		"_postman_id": "0048df1b-7a41-465c-b770-6944a108ffc7",
+		"name": "NodeJS + MongoDB",
+		"description": "## A simple Backend developed with NodeJS and MongoDB (running in Docker).\n\nAvailable models: \n- product\n- animal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Registers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/:model?page=1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						":model"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					],
+					"variable": [
+						{
+							"key": "model",
+							"value": "product"
+						}
+					]
+				},
+				"description": "This request returns all items from database, separated by pages (a query param)."
+			},
+			"response": [
+				{
+					"name": "GET Products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/:model?page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "product"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2563"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a03-eyCrB4k/wnZwkaIYQsXsWDclRjo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 03:24:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"docs\": [\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14174892c47fba6b220\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14474892c47fba6b221\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14574892c47fba6b222\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14574892c47fba6b223\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14674892c47fba6b224\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14774892c47fba6b225\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14874892c47fba6b226\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14974892c47fba6b227\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14974892c47fba6b228\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6ef14a74892c47fba6b229\",\n            \"title\": \"React Native\",\n            \"description\": \"Construa aplicativos nativos com React Native\",\n            \"url\": \"https://github.com/facebook/react-native\",\n            \"__v\": 0\n        }\n    ],\n    \"total\": 11,\n    \"limit\": 10,\n    \"page\": \"1\",\n    \"pages\": 2\n}"
+				},
+				{
+					"name": "GET Animals",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/:model?page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "animal"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "412"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19c-v+rlKJXoXcVk/lwZZVyLgK9ogZE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 06:02:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"docs\": [\n        {\n            \"createdAt\": \"Mon Mar 16 2020 02:39:55 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6f11c16c204774e17a5967\",\n            \"name\": \"Mandalena\",\n            \"type\": \"rat\",\n            \"age\": \"2 years\",\n            \"hability\": \"walk\",\n            \"__v\": 0\n        },\n        {\n            \"createdAt\": \"Mon Mar 16 2020 02:49:13 GMT-0300 (Brasilia Standard Time)\",\n            \"_id\": \"5e6f14716ec74476d37af5c0\",\n            \"name\": \"Dego\",\n            \"type\": \"bird\",\n            \"age\": \"15 years\",\n            \"hability\": \"fly\",\n            \"__v\": 0\n        }\n    ],\n    \"total\": 2,\n    \"limit\": 10,\n    \"page\": \"1\",\n    \"pages\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "GET Single Register",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/:model/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						":model",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "model",
+							"value": "animal"
+						},
+						{
+							"key": "id",
+							"value": "5e6f14716ec74476d37af5c0"
+						}
+					]
+				},
+				"description": "This request returns a single item from database, represented by the ID (a URI param)."
+			},
+			"response": [
+				{
+					"name": "GET Single Animal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/:model/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "animal"
+								},
+								{
+									"key": "id",
+									"value": "5e6f14716ec74476d37af5c0"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "177"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b1-cwdHr3sfgeum+HpsdldKcc1yVfk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 06:06:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"createdAt\": \"Mon Mar 16 2020 02:49:13 GMT-0300 (Brasilia Standard Time)\",\n    \"_id\": \"5e6f14716ec74476d37af5c0\",\n    \"name\": \"Dego\",\n    \"type\": \"bird\",\n    \"age\": \"15 years\",\n    \"hability\": \"fly\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "GET Single Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/:model/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "product"
+								},
+								{
+									"key": "id",
+									"value": "5e6f125b6c204774e17a5968"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "250"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fa-uTliaxNG5y+b8cno8CEJ0iH4UbE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 06:06:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"createdAt\": \"Mon Mar 16 2020 02:39:55 GMT-0300 (Brasilia Standard Time)\",\n    \"_id\": \"5e6f125b6c204774e17a5968\",\n    \"tittle\": \"React Native\",\n    \"description\": \"Construa aplicativos nativos com React Native\",\n    \"url\": \"https://github.com/facebook/react-native\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "POST Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"React Native\",\n\t\"description\":\"Construa aplicativos nativos com React\",\n\t\"url\":\"https://github.com/facebook/react\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/:model",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						":model"
+					],
+					"variable": [
+						{
+							"key": "model",
+							"value": "product"
+						}
+					]
+				},
+				"description": "This request creates a new register in database. The infos are sent by a JSON body. The request returns the object stored."
+			},
+			"response": [
+				{
+					"name": "POST Animal",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Qwerty\",\n\t\"hability\":\"swim\",\n\t\"age\":\"3 years\",\n\t\"type\":\"fish\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/:model",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "animal"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "179"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b3-x3agp8a8PGQBh+d8hBg/o8uUo48\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 06:10:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"createdAt\": \"Mon Mar 16 2020 02:56:56 GMT-0300 (Brasilia Standard Time)\",\n    \"_id\": \"5e6f185d9d9bb078eb5eaf12\",\n    \"name\": \"Qwerty\",\n    \"hability\": \"swim\",\n    \"age\": \"3 years\",\n    \"type\": \"fish\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "POST Product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"MongoDB\",\n\t\"description\":\"The database for modern applications\",\n\t\"url\":\"https://mongodb.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/:model",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "product"
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "215"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d7-EVjjxCg/HyKPrNoOy84VirlI0yk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 06:09:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"createdAt\": \"Mon Mar 16 2020 02:56:56 GMT-0300 (Brasilia Standard Time)\",\n    \"_id\": \"5e6f18049d9bb078eb5eaf10\",\n    \"title\": \"MongoDB\",\n    \"description\": \"The database for modern applications\",\n    \"url\": \"https://mongodb.com\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "PATCH Single Register",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\":\"https://nodejs.org\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/:model/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						":model",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "model",
+							"value": "product"
+						},
+						{
+							"key": "id",
+							"value": "5e712345c7f36005cacdcb2a"
+						}
+					]
+				},
+				"description": "This is an update request. Infos sent to this route change the object info in the database and returns the object changed."
+			},
+			"response": [
+				{
+					"name": "PATCH Product",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"React\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/:model/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "product"
+								},
+								{
+									"key": "id",
+									"value": "5e6ef14174892c47fba6b220"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "243"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f3-Q/+dSl4bHV/+clw4DgXJP+mubXw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 04:10:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"createdAt\": \"Mon Mar 16 2020 00:21:48 GMT-0300 (Brasilia Standard Time)\",\n    \"_id\": \"5e6ef14174892c47fba6b220\",\n    \"title\": \"React\",\n    \"description\": \"Construa aplicativos nativos com React Native\",\n    \"url\": \"https://github.com/facebook/react-native\",\n    \"__v\": 0\n}"
+				},
+				{
+					"name": "PATCH Single Animal",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"age\": \"4 years\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/:model/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "animal"
+								},
+								{
+									"key": "id",
+									"value": "5e6f185d9d9bb078eb5eaf12"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "179"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b3-ujNpqnlnDzJlvuGQYHsfXKOpMG8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 06:11:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"createdAt\": \"Mon Mar 16 2020 02:56:56 GMT-0300 (Brasilia Standard Time)\",\n    \"_id\": \"5e6f185d9d9bb078eb5eaf12\",\n    \"name\": \"Qwerty\",\n    \"hability\": \"swim\",\n    \"age\": \"4 years\",\n    \"type\": \"fish\",\n    \"__v\": 0\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE Single Register",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/:model/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						":model",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "model",
+							"value": "animal"
+						},
+						{
+							"key": "id",
+							"value": "5e6f192b9d9bb078eb5eaf13"
+						}
+					]
+				},
+				"description": "This request destroy the registry in database."
+			},
+			"response": [
+				{
+					"name": "DELETE Single Animal",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/:model/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "animal"
+								},
+								{
+									"key": "id",
+									"value": "5e6f192b9d9bb078eb5eaf13"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 06:16:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "DELETE Single Product",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/:model/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								":model",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "model",
+									"value": "product"
+								},
+								{
+									"key": "id",
+									"value": "5e6ef14174892c47fba6b220"
+								}
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 16 Mar 2020 04:11:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a800734e-fe5f-4144-b4d2-3781b220fd78",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6b1b351c-8149-4efb-87a7-eab83e433f4a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
